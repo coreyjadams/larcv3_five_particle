@@ -41,6 +41,6 @@ def gen_sparse2d_data_filler(name, producer):
     proc.set_param("Verbosity",         "3")
     proc.set_param("ImageProducer",  producer)
     proc.set_param("Channels",          "[0,1,2]")
-    proc.set_param("CaffeMode",     "false")
+    proc.set_param("CaffeMode",     "true")
     return proc
 

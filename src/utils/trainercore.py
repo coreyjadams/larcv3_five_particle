@@ -711,12 +711,8 @@ class trainercore(object):
         minibatch_data = self.fetch_next_batch()
         io_end_time = datetime.datetime.now()
 
-        print(minibatch_data['image'].dtype)
-        print(minibatch_data['label'].shape)
-
         logits_image, labels_image, weight_image = self.forward_pass(minibatch_data)
 
-        print(logits_image.shape)
 
         verbose = False
 
